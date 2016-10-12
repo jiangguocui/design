@@ -9,6 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Proxy;
+import java.util.UUID;
 
 public class Reflect1 {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException,
@@ -182,6 +183,8 @@ public class Reflect1 {
         ClassLoader classLoader = Reflect1.class.getClassLoader();
         Class class1 = classLoader.loadClass("com.reflect.demo.User");
         System.out.println(class1.getName());
+        System.out.println(  UUID.randomUUID().toString());
+      
     }
 
     // 取普通对象以及原生对象的Class对象：
